@@ -8,8 +8,8 @@ Sparkify is a startup company that needs help structuring their data in a way th
 * `Project_1B_ Project_Template.ipynb`: ETL pipeline to transfer data from csv file to Cassandra tables.
 
 ## Schema:
-`session` Table  
-columns: 
+`session` Table
+columns:  
 * sessionId  
 * itemInSession  
 * artist  
@@ -19,7 +19,7 @@ columns:
     - The primary key consists of the partition key and clustering column; these are the columns that will be used to filter the data by.
 
 `user_session` Table
-columns:
+columns:  
 * userId
 * sessionId
 * itemInSession
@@ -31,7 +31,7 @@ columns:
     - The primary key consists of the partition key plus two custering columns; userId and sessionid are used to filter the data and itemInSession is used to sort the data
 
 `song_user` Table
-columns:
+columns:  
 * song
 * userId
 * firstName
